@@ -1,0 +1,85 @@
+
+.prueba {
+    display: grid;
+    grid-template-areas: "encabezado" "abajo";
+    
+    
+
+  .encabezado {
+    grid-area: encabezado;
+      height: 35vh;
+      position: relative;
+      
+
+      .img {
+            position: absolute;
+            width: 80vw;
+            height: 15vh;
+            top: 5vh;
+            max-width: 80%;
+            left: 12vw;
+           
+    }
+
+            
+     
+      .text { 
+              
+              top: 25vh;
+              position: relative;
+              text-align: center;
+              color: gray;
+              font-size: 150%;
+            }
+   
+          }
+  
+.abajo{ 
+        grid-area: abajo;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        @media screen and (max-width: 100vh) {
+        grid-template-columns: 1fr;
+        }
+  .texto {
+      
+      height: 45vh;
+      display: flex;
+      flex-direction: column;
+      @media screen and (max-width: 100vh) {
+        .MuiTextField-root {
+          min-width: 80%; /* Ajusta tamaño a modo celular*/
+        }
+        .iniciesesion {
+               min-width: 60%;
+             
+        }
+      }
+
+      .ojito-iniciarsesion {
+        position: absolute;
+        bottom: 40.5vh;
+        left: 39vw;
+        font-size: 35px;
+        color: gray;
+      }
+        }
+
+  .botones {
+    height: 30vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width: 100vh) {
+      .face {
+
+        max-width: 90%;  
+      }
+      .goog {
+        max-width: 90%;
+      }
+    }
+  }
+}
+  }
